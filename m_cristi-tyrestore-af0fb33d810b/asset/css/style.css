@@ -1,0 +1,199 @@
+html, body {
+    height: 100%;
+}
+
+/* Typography */
+
+body, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #494949;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.table .row:first-child {
+    color: #9b9b9b;
+    text-transform: uppercase;
+}
+
+/* Layout */
+
+body {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+}
+
+.container {
+    max-width: 1430px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    background-image: url("../img/dvse_logo.svg");
+    width: 138px;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+#cart {
+    background: url("../img/icons/basket.svg") no-repeat top left;
+    width: 33px;
+    height: 33px;
+}
+
+#cart span {
+    background-color: #2196f3;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    left: -8px;
+    top: -2px;
+}
+
+/* Content */
+
+main {
+    display: flex;
+}
+
+section {
+    flex: 1;
+}
+
+h4 {
+    display: flex;
+    align-items: center;
+}
+
+h4 span {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+
+}
+
+h4 span.vehicle-icon {
+    background: url("../img/icons/car-side.svg") no-repeat center;
+    width: 28px;
+}
+
+h4 span.tires-icon {
+    background: url("../img/icons/tyres.svg") no-repeat center;
+
+}
+
+/* Table */
+
+.table {
+    display: flex;
+    background-color: #fff;
+    border-radius: 4px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 4px;
+    align-items: center;
+}
+
+.table .row {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+
+}
+
+.table .row:nth-child(2n) {
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+}
+
+.tires {
+    margin-left: 15px;
+    display: none;
+}
+
+/* Buttons */
+
+.row div:last-child {
+    justify-content: flex-end;
+} 
+
+.btn {
+    border: none;
+    background: #d6d6d6 url("../img/icons/arrow-right.svg") no-repeat center right 12px;
+    color: #000;
+    padding: 7px 35px 7px 20px;
+    border-radius: 3px;
+    background-size: 8px;
+    opacity: .7;
+}
+
+.btn.add {
+    background-image: url("../img/icons/add.svg");
+    white-space: nowrap;
+    background-size: 10px;
+}
+
+.table > div:hover .btn{
+    color: #fff;
+    background: #2196f3 url("../img/icons/arrow-right.svg") no-repeat center right 12px;
+    background-size: 8px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.table > div:hover .btn.add{
+    background-image: url("../img/icons/add.svg");
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.table .row:hover:not(:first-of-type){
+    background-color: #fff;
+    border: 2px solid #2196f3;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}

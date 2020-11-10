@@ -1,0 +1,46 @@
+.wrapper {
+    text-align: center;
+    place-content: center;
+    display: grid;
+}
+
+div.title {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.table {
+    margin-top: 10px;
+    place-content: center;
+    min-width: 800px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+    font-size: $textSize-m;
+    font-family: $fontFamily;
+    text-align: left;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.elements {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.homepageButton{
+    flex: 1;
+}
+
+.totalPrice {
+    flex: 1;
+}

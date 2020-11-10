@@ -1,0 +1,19 @@
+.loader {
+    width: 1em;
+    height: 1em;
+
+    animation: spinning-loader-animation 1s linear infinite;
+    border-radius: 50%;
+    border: 4px solid lighten($color: $color-primary, $amount: 20);
+    border-top-color: $color-primary;
+}
+
+@keyframes spinning-loader-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
